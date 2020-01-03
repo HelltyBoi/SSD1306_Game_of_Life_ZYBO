@@ -26839,3 +26839,1438 @@ Caused by: java.net.SocketException: Connection reset
 	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
 	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
 	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+14:39:49 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:39:52 INFO  : XSDB server has started successfully.
+14:39:55 INFO  : Processing command line option -hwspec C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper.hdf.
+14:39:56 INFO  : Checking for hwspec changes in the project SSD1306_example_TopWrapper_hw_platform_0.
+14:48:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786046A" && level==0} -index 1' command is executed.
+14:48:57 INFO  : FPGA configured successfully with bitstream "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/SSD1306_example_TopWrapper.bit"
+14:49:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786046A" && level==0} -index 1' command is executed.
+14:49:06 INFO  : 'fpga -state' command is executed.
+14:49:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:07 INFO  : Sourcing of 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl' is done.
+14:49:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+14:49:07 INFO  : Hardware design information is loaded from 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf'.
+14:49:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+14:49:07 INFO  : 'stop' command is executed.
+14:49:08 INFO  : 'ps7_init' command is executed.
+14:49:08 INFO  : 'ps7_post_config' command is executed.
+14:49:08 INFO  : 'con' command is executed.
+14:49:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:49:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:09 INFO  : The application 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+loadhw C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+dow C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf
+----------------End of Script----------------
+
+14:49:09 INFO  : Memory regions updated for context APU
+14:49:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:09 INFO  : 'con' command is executed.
+14:49:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+con
+----------------End of Script----------------
+
+14:49:16 INFO  : Disconnected from the channel tcfchan#1.
+14:49:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786046A" && level==0} -index 1' command is executed.
+14:49:17 INFO  : 'fpga -state' command is executed.
+14:49:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:17 INFO  : Sourcing of 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl' is done.
+14:49:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+14:49:17 INFO  : Hardware design information is loaded from 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf'.
+14:49:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+14:49:18 INFO  : 'stop' command is executed.
+14:49:18 INFO  : 'ps7_init' command is executed.
+14:49:19 INFO  : 'ps7_post_config' command is executed.
+14:49:19 INFO  : 'con' command is executed.
+14:49:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:49:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:20 INFO  : The application 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+loadhw C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+dow C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf
+----------------End of Script----------------
+
+14:49:20 INFO  : Memory regions updated for context APU
+14:49:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:20 INFO  : 'con' command is executed.
+14:49:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+con
+----------------End of Script----------------
+
+14:49:44 INFO  : Disconnected from the channel tcfchan#2.
+14:49:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786046A" && level==0} -index 1' command is executed.
+14:49:44 INFO  : 'fpga -state' command is executed.
+14:49:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:45 INFO  : Sourcing of 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl' is done.
+14:49:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+14:49:45 INFO  : Hardware design information is loaded from 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf'.
+14:49:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+14:49:45 INFO  : 'stop' command is executed.
+14:49:46 INFO  : 'ps7_init' command is executed.
+14:49:46 INFO  : 'ps7_post_config' command is executed.
+14:49:46 INFO  : 'con' command is executed.
+14:49:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:49:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:47 INFO  : The application 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+loadhw C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+dow C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf
+----------------End of Script----------------
+
+14:49:47 INFO  : Memory regions updated for context APU
+14:49:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:47 INFO  : 'con' command is executed.
+14:49:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+con
+----------------End of Script----------------
+
+14:54:09 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 226 xsdb eval "disconnect tcfchan#3"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+14:54:23 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:54:25 INFO  : XSDB server has started successfully.
+14:54:25 INFO  : Processing command line option -hwspec C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper.hdf.
+14:54:26 INFO  : Checking for hwspec changes in the project SSD1306_example_TopWrapper_hw_platform_0.
+14:54:26 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:26 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:54:30 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:30 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:30 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:54:36 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:36 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:54:41 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:41 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:41 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:54:46 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:46 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:46 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:54:51 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:51 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:54:56 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:54:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:54:56 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:01 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:01 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:06 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:06 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:11 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:12 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:17 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:17 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:22 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:22 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:22 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:27 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:27 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:32 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:32 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:37 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:37 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:42 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:42 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:42 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:47 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:47 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:52 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:52 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:55:57 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:55:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:55:58 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:03 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:03 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:08 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:08 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:08 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:13 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:13 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:18 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:18 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:23 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:23 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:28 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:28 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:33 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:33 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:38 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:38 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:43 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:44 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:49 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:49 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:49 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:54 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:54 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:56:59 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:56:59 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:56:59 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:04 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:04 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:09 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:09 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:14 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:14 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:19 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:19 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:25 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:25 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:27 ERROR : Unexpected error occurred during generating bsp sources
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:421)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:275)
+	at org.eclipse.ui.internal.progress.ProgressManager$3.run(ProgressManager.java:960)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:995)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:970)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:1166)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:124)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:850)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:743)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:727)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:662)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+14:57:30 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:30 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:30 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:35 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:35 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:35 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:40 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:40 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:40 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:45 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:45 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:45 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:50 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:50 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:51 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:57:56 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:57:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:57:56 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:01 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:01 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:06 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:06 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:11 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:11 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:16 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:16 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:21 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:21 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:21 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:26 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:26 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:31 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:31 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:36 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:37 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:42 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:42 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:42 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:47 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:47 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:52 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:52 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:58:57 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:58:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:58:57 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:01 ERROR : Unexpected error occurred during generating bsp sources
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:421)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:275)
+	at org.eclipse.ui.internal.progress.ProgressManager$3.run(ProgressManager.java:960)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:995)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:970)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:1166)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:124)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:850)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:743)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:727)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:662)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+14:59:02 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:02 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:07 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:07 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:07 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:12 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:12 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:15 ERROR : Unexpected error occurred during generating bsp sources
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:421)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:275)
+	at org.eclipse.ui.internal.progress.ProgressManager$3.run(ProgressManager.java:960)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:995)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:970)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:1166)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:124)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:850)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:743)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:727)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:662)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+14:59:17 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:18 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:23 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:23 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:28 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:28 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:33 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:33 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:38 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:38 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:43 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:43 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:48 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:48 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:48 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:53 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:53 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:59:58 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+14:59:58 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+14:59:58 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:03 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:04 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:09 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:09 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:14 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:14 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:16 ERROR : Unexpected error occurred during generating bsp sources
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:421)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:275)
+	at org.eclipse.ui.internal.progress.ProgressManager$3.run(ProgressManager.java:960)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:995)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:970)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:1166)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:124)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:850)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:743)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:727)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:662)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+15:00:19 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:19 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:24 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:24 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:29 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:29 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:34 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:34 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:34 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:39 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:39 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:39 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:44 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:44 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:44 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:49 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:49 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:50 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:00:55 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:00:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:00:55 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:08 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:01:11 INFO  : XSDB server has started successfully.
+15:01:11 INFO  : Processing command line option -hwspec C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper.hdf.
+15:01:11 INFO  : Checking for hwspec changes in the project SSD1306_example_TopWrapper_hw_platform_0.
+15:01:11 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:11 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:16 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:16 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:21 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:21 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:21 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:26 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:26 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:31 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:31 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:37 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:37 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:42 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:42 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:42 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:47 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:47 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:52 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:52 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:01:57 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:01:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:01:57 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:02 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:02 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:07 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:07 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:07 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:12 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:12 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:17 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:17 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:22 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:22 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:23 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:28 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:28 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:33 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:33 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:38 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:38 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:43 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:43 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:48 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:48 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:48 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:53 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:53 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:02:58 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:02:58 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:02:59 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:03 ERROR : Unexpected error occurred during generating bsp sources
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:421)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:275)
+	at org.eclipse.ui.internal.progress.ProgressManager$3.run(ProgressManager.java:960)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:995)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:970)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:1166)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:124)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.execute(RegenBspSourcesHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:243)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:224)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:167)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:850)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:743)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$7(HandledContributionItem.java:727)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:662)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4170)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: java.lang.NullPointerException
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+15:03:04 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:04 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:09 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:09 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:14 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:14 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:19 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:19 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:28 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:28 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:33 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:33 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:38 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:38 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:43 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:43 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:49 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:49 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:49 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:54 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:54 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:03:59 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:03:59 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:03:59 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:04 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:04 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:09 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:09 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:14 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:14 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:19 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:19 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:24 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:24 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:29 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:30 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:35 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:35 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:35 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:40 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:40 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:40 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:45 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:45 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:45 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:50 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:50 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:50 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:04:55 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:04:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:04:55 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:00 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:00 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:01 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:06 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:06 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:11 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:11 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:16 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:16 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:21 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:21 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:21 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:26 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:26 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:31 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:31 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:36 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:36 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:36 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:41 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:41 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:41 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:46 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:46 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:46 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:51 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:52 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:05:57 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:05:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:05:57 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:06:02 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+
+15:06:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+15:06:02 ERROR : Failed to openhw "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:10:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786046A" && level==0} -index 1' command is executed.
+15:10:45 INFO  : FPGA configured successfully with bitstream "C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/SSD1306_example_TopWrapper.bit"
+15:10:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786046A" && level==0} -index 1' command is executed.
+15:10:51 INFO  : 'fpga -state' command is executed.
+15:10:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:52 INFO  : Sourcing of 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl' is done.
+15:10:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+15:10:52 INFO  : Hardware design information is loaded from 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf'.
+15:10:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0' command is executed.
+15:10:53 INFO  : 'stop' command is executed.
+15:10:53 INFO  : 'ps7_init' command is executed.
+15:10:53 INFO  : 'ps7_post_config' command is executed.
+15:10:53 INFO  : 'con' command is executed.
+15:10:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:10:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:54 INFO  : The application 'C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+loadhw C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+dow C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/GameOfLife_on_SSD1306_app/Debug/GameOfLife_on_SSD1306_app.elf
+----------------End of Script----------------
+
+15:10:54 INFO  : Memory regions updated for context APU
+15:10:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:55 INFO  : 'con' command is executed.
+15:10:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786046A"} -index 0
+con
+----------------End of Script----------------
+
+15:28:57 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 163 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+15:29:08 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:29:09 INFO  : XSDB server has started successfully.
+15:29:16 INFO  : Processing command line option -hwspec C:/Users/0036472890/workspace/SSD1306_example/SSD1306_example.sdk/SSD1306_example_TopWrapper.hdf.
+15:29:18 INFO  : Checking for hwspec changes in the project SSD1306_example_TopWrapper_hw_platform_0.

@@ -1,3 +1,5 @@
+
+
 #include<stdio.h>
 //#include<time.h>
 #include"xil_printf.h"
@@ -21,6 +23,9 @@ int main (void){
 
 	InitIIC(XPAR_PS7_I2C_0_DEVICE_ID);
 
+
+
+
 	//clock_t begin=clock();
 	//float elapsed,cps;
 	unsigned int i=0;
@@ -33,6 +38,7 @@ int main (void){
 	XIicPs Iic;
 
 	u8 byte_array[1024]={
+
 
 			0x38,0x18,0x18,0x88,0x84,0x84,0xC6,0xC6,0x46,0x62,0xA1,0xA1,0x71,0x71,0x79,0x39,
 			0x39,0x39,0x39,0x3C,0x1C,0x9E,0x9E,0xCE,0xCE,0xC6,0xE6,0xE6,0xF7,0xF7,0xF7,0xFF,
@@ -183,7 +189,7 @@ int main (void){
 		xil_printf("\n\r");}
 		xil_printf("%x ", byte_array_fin[i]);
 	}*/
-	usleep(100000);
+	usleep(1000000);
 	Draw128x64(byte_array_fin);
 
 	for(i=0; i<sizeof(byte_array)/sizeof(byte_array[0]); i++){

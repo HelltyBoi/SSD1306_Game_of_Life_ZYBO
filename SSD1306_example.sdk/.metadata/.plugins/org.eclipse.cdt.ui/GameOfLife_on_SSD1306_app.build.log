@@ -1,6 +1,6 @@
-17:21:19 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+15:10:48 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
 make all 
 make: Nothing to be done for `all'.
 
-17:21:19 Build Finished (took 590ms)
+15:10:48 Build Finished (took 243ms)
 
