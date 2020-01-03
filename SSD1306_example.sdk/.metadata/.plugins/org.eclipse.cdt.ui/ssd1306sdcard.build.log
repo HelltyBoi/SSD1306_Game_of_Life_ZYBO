@@ -1,0 +1,31 @@
+10:52:54 **** Auto Build of configuration Debug for project ssd1306sdcard ****
+make all 
+'Building file: ../ssd1306sdcard_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"ssd1306sdcard_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"ssd1306sdcard_main.d" -MT"ssd1306sdcard_main.d" -o "ssd1306sdcard_main.o" "../ssd1306sdcard_main.c"
+../ssd1306sdcard_main.c: In function 'main':
+../ssd1306sdcard_main.c:61:4: warning: unused variable 'Wdata' [-Wunused-variable]
+ u8 Wdata[64] __attribute__ ((aligned(32))) ="sekkusu";
+    ^
+../ssd1306sdcard_main.c:59:7: warning: unused variable 'percent' [-Wunused-variable]
+ char *percent="%256s";
+       ^
+../ssd1306sdcard_main.c:58:14: warning: variable 'DataSend' set but not used [-Wunused-but-set-variable]
+ const TCHAR *DataSend;
+              ^
+'Finished building: ../ssd1306sdcard_main.c'
+' '
+'Building target: ssd1306sdcard.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "ssd1306sdcard.elf"  ./ssd1306sdcard_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ssd1306sdcard.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size ssd1306sdcard.elf  |tee "ssd1306sdcard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49776	   1204	  25072	  76052	  12914	ssd1306sdcard.elf
+'Finished building: ssd1306sdcard.elf.size'
+' '
+
+10:52:56 Build Finished (took 1s.814ms)
+

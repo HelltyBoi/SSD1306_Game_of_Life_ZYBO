@@ -1,0 +1,3516 @@
+11:49:32 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+11:49:45 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+11:49:58 **** Incremental Build of configuration Debug for project SSD1306_example_app ****
+make all 
+make: Nothing to be done for `all'.
+11:52:08 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:109:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[10000]={0};
+     ^
+../src/GoL_main.c:108:5: warning: unused variable 'bit_array_corrected' [-Wunused-variable]
+  u8 bit_array_corrected[10000]={0};
+     ^
+../src/GoL_main.c:107:5: warning: unused variable 'bit_array' [-Wunused-variable]
+  u8 bit_array[10000]={0};
+     ^
+../src/GoL_main.c:105:5: warning: unused variable 'byte_array_fin' [-Wunused-variable]
+  u8 byte_array_fin[1024]={0};
+     ^
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:29:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+../src/GoL_main.c:28:15: warning: unused variable 'ctr_sum' [-Wunused-variable]
+  unsigned int ctr_sum;
+               ^
+../src/GoL_main.c:27:15: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int test=0;
+               ^
+../src/GoL_main.c:26:15: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int k=0;
+               ^
+../src/GoL_main.c:25:15: warning: unused variable 'j' [-Wunused-variable]
+  unsigned int j=0;
+               ^
+../src/GoL_main.c:24:15: warning: unused variable 'i' [-Wunused-variable]
+  unsigned int i=0;
+               ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35116	   1640	  23668	  60424	   ec08	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+11:53:11 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32372	   2664	  23668	  58704	   e550	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+11:53:25 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+11:53:51 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:94:14: error: 'happybdayHiragana' undeclared (first use in this function)
+  Draw128x64(&happybdayHiragana[0]);
+              ^
+../src/GoL_main.c:94:14: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/GoL_main.o] Error 1
+11:54:02 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32372	   2664	  23668	  58704	   e550	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+11:54:08 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+11:54:21 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+11:55:02 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34740	   1640	  23668	  60048	   ea90	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+11:55:17 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:00:59 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:90:6: error: 'i' undeclared (first use in this function)
+  for(i=0; i<(sizeof(byte_array)/sizeof(byte_array[0])); i++){//this section turns bytes into a bit velues
+      ^
+../src/GoL_main.c:90:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/GoL_main.c:91:7: error: 'j' undeclared (first use in this function)
+   for(j=0; j<8; ++j){
+       ^
+../src/GoL_main.c:12:5: warning: variable 'bit_array' set but not used [-Wunused-but-set-variable]
+  u8 bit_array[10000]={0};
+     ^
+make: *** [src/GoL_main.o] Error 1
+12:01:24 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:12:5: warning: variable 'bit_array' set but not used [-Wunused-but-set-variable]
+  u8 bit_array[10000]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35188	   1640	  23668	  60496	   ec50	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:02:46 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:03:04 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:03:28 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:04:24 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:14:10: warning: unused variable 'k' [-Wunused-variable]
+  int i,j,k;
+          ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:05:00 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:14:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:05:11 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:06:10 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:116:56: error: 'test' undeclared (first use in this function)
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                                                        ^
+../src/GoL_main.c:116:56: note: each undeclared identifier is reported only once for each function it appears in
+../src/GoL_main.c:13:5: warning: variable 'bit_array_corrected' set but not used [-Wunused-but-set-variable]
+  u8 bit_array_corrected[10000]={0};
+     ^
+make: *** [src/GoL_main.o] Error 1
+12:06:31 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:13:5: warning: variable 'bit_array_corrected' set but not used [-Wunused-but-set-variable]
+  u8 bit_array_corrected[10000]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72132	   2808	  23740	  98680	  18178	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:07:38 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:08:41 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:09:07 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                   ^
+../src/GoL_main.c:13:5: warning: unused variable 'bit_array_corrected' [-Wunused-variable]
+  u8 bit_array_corrected[10000]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   2808	  23740	  98488	  180b8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:09:13 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:09:36 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:10:01 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:10:05 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:10:47 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:10:50 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:11:04 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:11:12 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:11:31 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:11:45 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:12:01 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:12:36 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test=0;
+                   ^
+../src/GoL_main.c:13:5: warning: unused variable 'bit_array_corrected' [-Wunused-variable]
+  u8 bit_array_corrected[10000]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   2808	  23740	  98488	  180b8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:12:42 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:13:15 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:13:51 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:13:5: warning: unused variable 'bit_array_corrected' [-Wunused-variable]
+  u8 bit_array_corrected[10000]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   2808	  23740	  98488	  180b8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:13:57 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:14:16 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:15:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:15:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:14:20 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:14:49 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:15:01 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:19:14 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:14:5: error: redefinition of 'bit_array'
+  u8 bit_array[10000]={0};
+     ^
+../src/GoL_main.c:12:5: note: previous definition of 'bit_array' was here
+  u8 bit_array[10000]={0};
+     ^
+../src/GoL_main.c:16:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:16:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+make: *** [src/GoL_main.o] Error 1
+12:19:27 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:16:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:16:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:14:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[10000]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   2808	  23740	  98488	  180b8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:19:51 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:21:31 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:16:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:16:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:14:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[10]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   2808	  23740	  98488	  180b8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:21:45 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:30:47 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:16:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:16:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:14:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[1024]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71940	   2808	  23740	  98488	  180b8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:31:22 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:46:31 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:17:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:17:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:15:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[1024]={0};
+     ^
+../src/GoL_main.c:97:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:48:41 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:17:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:17:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:15:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[1024]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71956	   2808	  23740	  98504	  180c8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:49:46 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:17:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:17:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:15:5: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 bit_array_aux[1024]={0};
+     ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71956	   2808	  23740	  98504	  180c8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:50:42 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:51:50 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:17:6: error: conflicting types for 'bit_array_aux'
+  u8 *bit_array_aux;
+      ^
+../src/GoL_main.c:15:5: note: previous definition of 'bit_array_aux' was here
+  u8 bit_array_aux[1024]={0};
+     ^
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:17:6: warning: unused variable 'bit_array_aux' [-Wunused-variable]
+  u8 *bit_array_aux;
+      ^
+make: *** [src/GoL_main.o] Error 1
+12:53:10 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:17:6: warning: variable 'bit_array_aux' set but not used [-Wunused-but-set-variable]
+  u8 *bit_array_aux;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71892	   2808	  23740	  98440	  18088	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:53:28 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:53:42 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:54:26 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:17:6: warning: variable 'bit_array_aux' set but not used [-Wunused-but-set-variable]
+  u8 *bit_array_aux;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71956	   2808	  23740	  98504	  180c8	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:54:41 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:17:6: warning: variable 'bit_array_aux' set but not used [-Wunused-but-set-variable]
+  u8 *bit_array_aux;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71876	   2808	  23740	  98424	  18078	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:54:50 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:55:03 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:56:31 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:17:6: warning: variable 'bit_array_aux' set but not used [-Wunused-but-set-variable]
+  u8 *bit_array_aux;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71908	   2808	  23740	  98456	  18098	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:56:53 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+../src/GoL_main.c:17:6: warning: variable 'bit_array_aux' set but not used [-Wunused-but-set-variable]
+  u8 *bit_array_aux;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71916	   2808	  23740	  98464	  180a0	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:57:25 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:57:43 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:58:12 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:58:19 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:58:32 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+12:58:52 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+12:58:57 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+13:02:11 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+13:03:34 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+13:04:00 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+13:04:48 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+13:04:53 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+13:07:18 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71980	   2808	  23740	  98528	  180e0	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+13:07:26 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:18:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:18:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+13:07:38 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+13:07:51 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+13:12:26 **** Auto Build of configuration Debug for project GameOfLife_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:20:21: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                     ^
+../src/GoL_main.c:20:19: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int i,j,k,test;
+                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_app.elf  |tee "GameOfLife_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72020	   2808	  23740	  98568	  18108	GameOfLife_app.elf
+'Finished building: GameOfLife_app.elf.size'
+' '
+15:02:19 **** Incremental Build of configuration Debug for project GameOfLife_app ****
+make all 
+make: Nothing to be done for `all'.
+15:19:31 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:146:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:181:4: warning: 'status' is used uninitialized in this function [-Wuninitialized]
+  if(status==XST_SUCCESS)
+    ^
+../src/GoL_main.c:188:35: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   xil_printf("%x ", byte_array_fin[i]);
+                                   ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36316	   1640	  23668	  61624	   f0b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:20:31 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:21:49 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:146:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:180:8: warning: 'byte_array_fin' is used uninitialized in this function [-Wuninitialized]
+  status=Draw128x64(&byte_array_fin[0]);
+        ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36232	   1640	  23668	  61540	   f064	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:22:10 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:23:13 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:146:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:180:8: warning: 'byte_array_fin' is used uninitialized in this function [-Wuninitialized]
+  status=Draw128x64(&byte_array_fin[0]);
+        ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36232	   1640	  23668	  61540	   f064	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:23:23 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:23:36 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:25:09 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:146:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:180:8: warning: 'byte_array_fin' is used uninitialized in this function [-Wuninitialized]
+  status=Draw128x64(&byte_array_fin[0]);
+        ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36232	   1640	  23668	  61540	   f064	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:27:23 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:167:19: error: expected ';' before ')' token
+  for(i=0; i<(8192));i++){
+                   ^
+../src/GoL_main.c:167:24: error: expected ';' before ')' token
+  for(i=0; i<(8192));i++){
+                        ^
+../src/GoL_main.c:167:24: error: expected statement before ')' token
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+make: *** [src/GoL_main.o] Error 1
+15:27:30 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:146:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:180:8: warning: 'byte_array_fin' is used uninitialized in this function [-Wuninitialized]
+  status=Draw128x64(&byte_array_fin[0]);
+        ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36232	   1640	  23668	  61540	   f064	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:30:41 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:34:24 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:153:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:187:8: warning: 'byte_array_fin' is used uninitialized in this function [-Wuninitialized]
+  status=Draw128x64(&byte_array_fin[0]);
+        ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36360	   1640	  23668	  61668	   f0e4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:34:38 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:36:08 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:39:07 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:30:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:117:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:128:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:153:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:183:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:40:08 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:41:08 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:117:14: error: 'BYTE_ARRAY' undeclared (first use in this function)
+  for(i=0; i<(BYTE_ARRAY); i++){//this section turns bytes into a bit velues
+              ^
+../src/GoL_main.c:117:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+make: *** [src/GoL_main.o] Error 1
+15:41:18 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:41:50 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:42:07 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:42:24 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:42:35 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:44:00 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:44:20 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:45:12 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:45:18 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:56:38 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:57:03 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:57:08 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:57:30 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:01:47 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:116:31: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  for(i=0;i<8192;i++) bit_array[i]=0;
+                               ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  23668	  61860	   f1a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:02:09 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:04:28 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36808	   1640	  23668	  62116	   f2a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:04:37 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:04:44 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:14:03 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36808	   1640	  23668	  62116	   f2a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:14:11 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:21:08 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[128+test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[128+i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36872	   1640	  23668	  62180	   f2e4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:21:16 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:21:52 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:130:24: warning: 'bit_array_corrected' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_corrected[i*8*128+(8-k)*128+j]=bit_array[test++];
+                        ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36808	   1640	  23668	  62116	   f2a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:22:52 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36936	   1640	  23668	  62244	   f324	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:23:02 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:25:02 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36872	   1640	  23668	  62180	   f2e4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:25:10 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:26:12 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:28:21 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:119:13: warning: 'bit_array' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    bit_array[i*8+j]=((byte_array[i]<<j)&(128))/128;
+             ^
+../src/GoL_main.c:155:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+../src/GoL_main.c:185:18: warning: 'byte_array_fin' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    byte_array_fin[i]=(byte_array_fin[i] + (bit_array[i*8+7-j]<<j));
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36872	   1640	  23668	  62180	   f2e4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:29:39 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:109:2: error: invalid initializer
+  u8 bit_array[10000]=0;
+  ^
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+make: *** [src/GoL_main.o] Error 1
+16:30:02 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:156:18: warning: 'bit_array_aux' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     bit_array_aux[i*128+j]=1;
+                  ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37064	   1640	  23668	  62372	   f3a4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:30:48 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:32:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37128	   1640	  23668	  62436	   f3e4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:31:10 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:46:57 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  54692	  92884	  16ad4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:47:22 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:54:45 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36552	   1640	  54692	  92884	  16ad4	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+16:55:05 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+16:55:12 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+17:01:35 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:39:5: warning: unused variable 'byte_array' [-Wunused-variable]
+  u8 byte_array[1024]={
+     ^
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+../src/GoL_main.c:35:15: warning: unused variable 'ctr_sum' [-Wunused-variable]
+  unsigned int ctr_sum;
+               ^
+../src/GoL_main.c:34:15: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int test=0;
+               ^
+../src/GoL_main.c:33:15: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int k=0;
+               ^
+../src/GoL_main.c:32:15: warning: unused variable 'j' [-Wunused-variable]
+  unsigned int j=0;
+               ^
+../src/GoL_main.c:31:15: warning: unused variable 'i' [-Wunused-variable]
+  unsigned int i=0;
+               ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34732	   1640	  54692	  91064	  163b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:02:06 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+../src/GoL_main.c:35:15: warning: unused variable 'ctr_sum' [-Wunused-variable]
+  unsigned int ctr_sum;
+               ^
+../src/GoL_main.c:34:15: warning: unused variable 'test' [-Wunused-variable]
+  unsigned int test=0;
+               ^
+../src/GoL_main.c:33:15: warning: unused variable 'k' [-Wunused-variable]
+  unsigned int k=0;
+               ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34860	   1640	  54692	  91192	  16438	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:04:27 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:147:44: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&(4>ctr_sum>1))
+                                            ^
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36012	   1640	  54692	  92344	  168b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:05:26 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:147:44: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&(4>ctr_sum>1))
+                                            ^
+../src/GoL_main.c:275:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+../src/GoL_main.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/GoL_main.o] Error 1
+17:05:40 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:147:44: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&(4>ctr_sum>1))
+                                            ^
+../src/GoL_main.c:37:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36156	   1640	  54692	  92488	  16948	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:06:01 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+17:08:12 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:150:44: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&(4>ctr_sum>1))
+                                            ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36220	   1640	  54692	  92552	  16988	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:11:01 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:150:44: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&(4>ctr_sum>1))
+                                            ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36284	   1640	  54692	  92616	  169c8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:11:23 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:150:44: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&(4>ctr_sum>1))
+                                            ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36284	   1640	  54692	  92616	  169c8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+17:11:30 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+18:31:43 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+18:32:14 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+18:32:33 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+18:34:24 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+18:36:17 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+18:40:28 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+18:42:57 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73088	   2808	  54764	 130660	  1fe64	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+18:43:26 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:07:03 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:07:49 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:08:05 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:08:22 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:08:46 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:08:55 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:09:25 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   1640	  54692	  92744	  16a48	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:09:29 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:12:20 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34428	   1640	  54692	  90760	  16288	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:12:26 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:39:14 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:220:45: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&((1<ctr_sum<4)))
+                                             ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34364	   1640	  54692	  90696	  16248	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:39:31 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:52:42 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:233:3: error: expected expression before '}' token
+   }
+   ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+make: *** [src/GoL_main.o] Error 1
+21:54:04 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:235:3: error: expected expression before '}' token
+   }
+   ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+make: *** [src/GoL_main.o] Error 1
+21:54:33 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34556	   1640	  54692	  90888	  16308	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:54:48 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:55:14 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:55:28 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:56:56 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42224	   2680	  54756	  99660	  1854c	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:57:25 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42144	   2680	  54756	  99580	  184fc	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:57:43 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:58:06 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+09:59:17 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42144	   2680	  54756	  99580	  184fc	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:00:25 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:04:23 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:222:45: warning: comparisons like 'X<=Y<=Z' do not have their mathematical meaning [-Wparentheses]
+    if((bit_array_corrected[i*128+j]==1)&&((1<ctr_sum<4)))
+                                             ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41952	   2680	  54756	  99388	  1843c	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:05:11 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:223:5: error: expected ')' before 'bit_array_aux'
+     bit_array_aux[i*128+j]=1;
+     ^
+../src/GoL_main.c:238:3: error: expected expression before '}' token
+   }
+   ^
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+make: *** [src/GoL_main.o] Error 1
+10:05:57 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42016	   2680	  54756	  99452	  1847c	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:06:19 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:08:07 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34284	   1640	  54692	  90616	  161f8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:08:16 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:08:31 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:09:22 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34348	   1640	  54692	  90680	  16238	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:09:43 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34284	   1640	  54692	  90616	  161f8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:10:03 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:10:19 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34284	   1640	  54692	  90616	  161f8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:10:34 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:10:57 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34284	   1640	  54692	  90616	  161f8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:11:04 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:11:23 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:20:31 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36268	   1640	  54692	  92600	  169b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:20:44 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:21:07 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:38:35 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:42:36 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34220	   1640	  54692	  90552	  161b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:42:51 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:43:48 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34156	   1640	  54692	  90488	  16178	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:43:50 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:44:01 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+10:55:05 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34220	   1640	  54692	  90552	  161b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+10:55:20 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+11:09:49 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34412	   1640	  54692	  90744	  16278	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+11:10:01 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+11:18:01 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34476	   1640	  54692	  90808	  162b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+11:18:19 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+12:20:18 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+12:25:06 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:43:06 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34476	   1640	  54692	  90808	  162b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:43:17 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:43:38 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+15:44:15 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34476	   1640	  54692	  90808	  162b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+15:44:21 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+17:57:54 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:12:46 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:16:13 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36268	   1640	  54692	  92600	  169b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:16:27 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:18:09 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34476	   1640	  54692	  90808	  162b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:18:13 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:38:34 **** Auto Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+'Building file: ../src/GoL_main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GoL_main.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GoL_main.d" -MT"src/GoL_main.d" -o "src/GoL_main.o" "../src/GoL_main.c"
+../src/GoL_main.c: In function 'main':
+../src/GoL_main.c:38:9: warning: unused variable 'Iic' [-Wunused-variable]
+  XIicPs Iic;
+         ^
+../src/GoL_main.c:37:6: warning: unused variable 'loop' [-Wunused-variable]
+  int loop;
+      ^
+../src/GoL_main.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  int status;
+      ^
+'Finished building: ../src/GoL_main.c'
+' '
+'Building target: GameOfLife_on_SSD1306_app.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "GameOfLife_on_SSD1306_app.elf"  ./src/GoL_main.o ./src/platform.o ./src/ssd1306_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GameOfLife_on_SSD1306_app.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size GameOfLife_on_SSD1306_app.elf  |tee "GameOfLife_on_SSD1306_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36268	   1640	  54692	  92600	  169b8	GameOfLife_on_SSD1306_app.elf
+'Finished building: GameOfLife_on_SSD1306_app.elf.size'
+' '
+21:38:38 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:38:59 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+21:39:22 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.
+17:21:19 **** Incremental Build of configuration Debug for project GameOfLife_on_SSD1306_app ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,6 @@
+11:49:58 **** Incremental Build of configuration Debug for project SSD1306_example_app ****
+make all 
+make: Nothing to be done for `all'.
+
+11:49:59 Build Finished (took 294ms)
+

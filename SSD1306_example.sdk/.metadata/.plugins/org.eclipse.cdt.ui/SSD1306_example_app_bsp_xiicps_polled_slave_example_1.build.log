@@ -1,0 +1,21 @@
+18:09:45 **** Build of configuration Debug for project SSD1306_example_app_bsp_xiicps_polled_slave_example_1 ****
+make all 
+'Building file: ../src/xiicps_polled_slave_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xiicps_polled_slave_example.o" -I../../SSD1306_example_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xiicps_polled_slave_example.d" -MT"src/xiicps_polled_slave_example.d" -o "src/xiicps_polled_slave_example.o" "../src/xiicps_polled_slave_example.c"
+'Finished building: ../src/xiicps_polled_slave_example.c'
+' '
+'Building target: SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SSD1306_example_app_bsp/ps7_cortexa9_0/lib -o "SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf"  ./src/xiicps_polled_slave_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf  |tee "SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27948	   1168	  23140	  52256	   cc20	SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf
+'Finished building: SSD1306_example_app_bsp_xiicps_polled_slave_example_1.elf.size'
+' '
+
+18:09:47 Build Finished (took 2s.106ms)
+
